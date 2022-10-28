@@ -105,5 +105,7 @@
       }
     }
   },
-  "defaultProject": "BookStore.Web"
+  "cli": {
+    "analytics": "11e8dde3-8669-49a6-a44f-c0542a5bf094"
+  }
 }
