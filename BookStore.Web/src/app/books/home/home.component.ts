@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {select, Store} from "@ngrx/store";
 import {selectBooks} from "../store/books.selector";
+import {invokeBooksApi} from "../store/books.action";
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ export class HomeComponent implements OnInit {
   books$ = this.store.pipe(select(selectBooks))
 
   ngOnInit(): void {
+    this.store.dispatch(invokeBooksApi());
   }
 
 }
