@@ -4,19 +4,19 @@
       "id": 1,
       "title": "Clean Code",
       "author": "Robert Martin",
-      "price" : 600
+      "price": 600
     },
     {
       "id": 2,
       "title": "Clr Via C#",
       "author": "Richter",
-      "price" : 1000
+      "price": 1000
     },
     {
       "id": 3,
       "title": "Patterns",
       "author": "Teplyakov",
-      "price" : 500
+      "price": 500
     }
   ]
 }

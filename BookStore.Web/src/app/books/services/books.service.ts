@@ -13,4 +13,16 @@ export class BooksService {
   getAllBooks(){
     return this.http.get<Book[]>(this.url + "books");
   }
+
+  saveBook(payload: Book){
+    return this.http.post<Book>(this.url + "books", payload);
+  }
+
+  updateBook(payload: Book){
+    return this.http.put<Book>(`http://localhost:3000/books/${payload.id}`, payload);
+  }
+
+  deleteBook(id: number){
+    return this.http.delete<Book>(`http://localhost:3000/books/${id}`);
+  }
 }
